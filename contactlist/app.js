@@ -24,11 +24,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
-
 app.use(express.static(path.join(__dirname,'public')));
 app.use('/api',route);
-
 
 app.get('/',(req,res)=>{
     res.send("hllo vikas");
