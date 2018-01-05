@@ -31,7 +31,6 @@ app.get('/',(req,res)=>{
     res.send("hllo vikas");
 
 });
-
 app.listen(port,()=>{
     console.log("server started as port: "+port);
 });
